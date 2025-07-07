@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/mySTL.dir/test/my_queue_test.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
