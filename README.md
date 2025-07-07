@@ -4,10 +4,11 @@
 这是一个**用于学习 C++ STL 底层原理**的自制库，通过手动实现 STL 部分核心组件（容器、迭代器、算法等），帮助理解 C++ 标准库的设计逻辑与实现细节。  
 
 适合 C++ 进阶学习者，从代码层面剖析：  
-- 容器（如 `vector`/`list`/`map` 等）的内存管理与操作原理  
+- 容器（如 `vector`/`string`/`stack`/`queue`/`priority_queue`/`unordered_set`/`unordered_map` 等）的内存管理与操作原理  
 - 迭代器的分类、适配与 traits 技术  
 - 算法（如排序、查找）的泛型实现  
-- 内存分配、类型萃取等基础组件  
+- 内存分配、类型萃取等基础组件
+- 复现了智能指针部分内容如（`shared_ptr`/`weak_ptr`/`unique_ptr`）
 
 ## 功能概览  
 ### 已实现组件  
@@ -17,9 +18,9 @@
 | `iterator_`    | 各类迭代器（插入迭代器、反向迭代器、流迭代器等）及迭代器辅助工具（`advance`/`distance`） |  
 | `memory_`      | 内存分配与管理相关（需结合代码确认具体实现，如 allocator 基础逻辑）       |  
 | `mystl_type_traits` | 类型萃取工具（判断类型属性、提取类型特征）                               |  
-| `test`         | 测试用例（验证各组件功能正确性，需补充用例时可参考）                     |  
+| `test`         | 测试用例（验证各组件功能正确性，该文件夹的内容仅仅是我自己在完成头文件编写之后的测试用例，若需补充用例时可参考）                     |  
 | `utility_`     | 辅助工具（如 `pair`/`optional` 等基础结构）                              |  
-| 根目录文件     | 容器（`vector`/`list`/`map` 等）、算法（`algorithm`）、字符串（`string`）等核心实现 |  
+| 根目录文件     | 容器（`vector`/`list`/`map` 等）、智能指针（`shared_ptr`）、字符串（`string`）等核心实现 |  
 
 
 ### 典型实现亮点  
@@ -139,6 +140,6 @@ mySTL/
 
 ## 联系与交流  
 - 仓库地址：[https://github.com/TMac-wei/mystl](https://github.com/TMac-wei/mystl)  
-- 遇到问题？直接提 Issue，或邮件联系：`你的邮箱（若需公开可补充）`  
+- 遇到问题？直接提 Issue
 
 **学习 STL 底层，从手写开始！** 🚀 欢迎 Star 支持，一起进步～
