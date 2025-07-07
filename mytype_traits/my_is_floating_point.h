@@ -2,7 +2,6 @@
  * @file      my_is_floating_point.h
  * @brief     [my_is_floating_point]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

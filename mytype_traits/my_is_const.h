@@ -2,7 +2,6 @@
  * @file      my_is_const.h
  * @brief     判断类型是否为const
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

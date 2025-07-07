@@ -2,7 +2,6 @@
  * @file      my_initializer_list.h
  * @brief     [初始化列表]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

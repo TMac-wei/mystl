@@ -2,7 +2,6 @@
  * @file      my_is_union.h
  * @brief     [判断是否是union类型]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

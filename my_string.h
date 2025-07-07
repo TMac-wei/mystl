@@ -2,7 +2,6 @@
  * @file      my_string.h
  * @brief     [std::string复现]
  * @author    Weijh
- * @date      2025/7/4
  * @version   1.0
  */
 

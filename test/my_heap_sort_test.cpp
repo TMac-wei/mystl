@@ -2,7 +2,6 @@
  * @file      my_heap_sort_test.cpp
  * @brief     [heap_sort_test]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

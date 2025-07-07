@@ -2,7 +2,6 @@
  * @file      my_is_same.h
  * @brief     [用于判断两个类型是否一致]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_tuple.h
  * @brief     [tuple]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

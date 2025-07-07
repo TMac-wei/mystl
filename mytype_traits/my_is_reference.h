@@ -2,7 +2,6 @@
  * @file      my_is_reference.h
  * @brief     [判断是否是引用]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

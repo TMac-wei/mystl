@@ -2,7 +2,6 @@
  * @file      my_remove_extent.h
  * @brief     [去除数组的维度]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

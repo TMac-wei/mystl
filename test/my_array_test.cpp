@@ -2,7 +2,6 @@
  * @file      my_array_test.cpp
  * @brief     [arrsy_test]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_string_test.cpp
  * @brief     [string test]
  * @author    Weijh
- * @date      2025/7/4
  * @version   1.0
  */
 

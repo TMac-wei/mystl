@@ -2,7 +2,6 @@
  * @file      my_enable_if.h
  * @brief     enable_if
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

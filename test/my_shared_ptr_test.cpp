@@ -2,7 +2,6 @@
  * @file      my_shared_ptr_test.cpp
  * @brief     [shared_ptr test]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

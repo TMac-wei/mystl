@@ -2,7 +2,6 @@
  * @file      my_is_void.h
  * @brief     [判断是不是空类型]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

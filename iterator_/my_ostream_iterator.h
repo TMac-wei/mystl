@@ -2,7 +2,6 @@
  * @file      my_ostream_iterator.h
  * @brief     [输出迭代器]
  * @author    Weijh
- * @date      2025/7/4
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_optional_test.cpp
  * @brief     [optional_test]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_move.h
  * @brief     [移动语义]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

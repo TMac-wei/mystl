@@ -2,7 +2,6 @@
  * @file      my_priority_queue.h
  * @brief     [my_priority_queue]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

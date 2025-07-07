@@ -2,7 +2,6 @@
  * @file      my_back_insert_iterator.h
  * @brief     [尾插迭代器]
  * @author    Weijh
- * @date      2025/7/4
  * @version   1.0
  */
 

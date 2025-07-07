@@ -2,7 +2,6 @@
  * @file      my_add_volatile.h
  * @brief     为类型添加volatile
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

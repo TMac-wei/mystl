@@ -2,7 +2,6 @@
  * @file      my_remove_pointer.h
  * @brief     [移除指针]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

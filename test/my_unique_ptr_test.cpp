@@ -2,7 +2,6 @@
  * @file      my_unique_ptr_test.cpp
  * @brief     [my_unique_ptr_test]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

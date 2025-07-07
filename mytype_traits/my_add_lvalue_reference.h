@@ -2,7 +2,6 @@
  * @file      my_add_lvalue_reference.h
  * @brief     为输入的类型添加左值引用
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

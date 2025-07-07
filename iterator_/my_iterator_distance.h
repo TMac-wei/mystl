@@ -2,7 +2,6 @@
  * @file      my_iterator_difference.h
  * @brief     [计算两个迭代器之间的距离（即元素个数）]
  * @author    Weijh
- * @date      2025/7/4
  * @version   1.0
  */
 

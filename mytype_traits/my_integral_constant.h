@@ -2,7 +2,6 @@
  * @file      my_integral_constant.h
  * @brief      类型萃取（type traits）
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

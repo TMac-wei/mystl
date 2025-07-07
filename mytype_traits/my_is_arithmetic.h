@@ -2,7 +2,6 @@
  * @file      my_is_arithmetic.h
  * @brief     [是否数字类型]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

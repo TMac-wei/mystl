@@ -2,7 +2,6 @@
  * @file      my_stack.h
  * @brief     [基于deque实现stack]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

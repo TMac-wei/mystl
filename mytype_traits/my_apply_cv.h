@@ -2,7 +2,6 @@
  * @file      my_apply_cv.h
  * @brief     [cv-ref 属性复制工具]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

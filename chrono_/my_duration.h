@@ -2,7 +2,6 @@
  * @file      my_duration.h
  * @brief     [my_duration]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

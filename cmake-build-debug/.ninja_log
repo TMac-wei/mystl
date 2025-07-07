@@ -1,9 +1,9 @@
 # ninja log v6
 24	327	7733085867876168	CMakeFiles/mySTL.dir/main.cpp.obj.ddi	61e8565a7a635485
-258	350	7736019955740201	D:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/mySTL.dir/CXXModules.json	a3466cd2df841d6f
+338	468	7736349306875038	D:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/mySTL.dir/CXXModules.json	a3466cd2df841d6f
 501	1414	7733085872642632	CMakeFiles/mySTL.dir/main.cpp.obj	4fe9433243ff9ecc
-873	1136	7736019961889220	mySTL.exe	9e29548a05f43faf
-258	350	7736019955740201	CMakeFiles/mySTL.dir/CXX.dd	a3466cd2df841d6f
+1336	1717	7736349316848125	mySTL.exe	9e29548a05f43faf
+338	468	7736349306875038	CMakeFiles/mySTL.dir/CXX.dd	a3466cd2df841d6f
 311	395	7734302176992568	CMakeFiles/mySTL.dir/test/my_hashtable_test.cpp.obj.modmap	354b4573235f2e65
 284	367	7733091724126823	CMakeFiles/mySTL.dir/main.cpp.obj.modmap	34ab79182997938
 325	442	7733162241397868	CMakeFiles/mySTL.dir/test/my_vector_test.cpp.obj.modmap	e462fd4861e24506
@@ -13,7 +13,7 @@
 434	989	7733862015623266	CMakeFiles/mySTL.dir/test/my_array_test.cpp.obj	2da32bde0de9072f
 311	392	7735808592667300	CMakeFiles/mySTL.dir/test/my_heap_sort_test.cpp.obj.modmap	2d5127099598f37d
 411	1178	7733486899143178	CMakeFiles/mySTL.dir/test/my_deque_test.cpp.obj	c86f08dc84ad9434
-8	641	7736037279453367	build.ninja	7c14a87eab8ca544
+8	641	7736351363263301	build.ninja	7c14a87eab8ca544
 22	253	7733236334590205	CMakeFiles/mySTL.dir/test/my_string_test.cpp.obj.ddi	74cb1488f01d7d97
 927	2339	7734039181405282	CMakeFiles/mySTL.dir/test/my_tuple_test.cpp.obj	b4dfe6f4a0965d73
 254	333	7733236336899367	CMakeFiles/mySTL.dir/test/my_string_test.cpp.obj.modmap	7c3c27dd8df510fa
@@ -81,9 +81,6 @@
 347	1028	7736015375085526	CMakeFiles/mySTL.dir/test/my_shared_ptr_test.cpp.obj	31ce508705cb82f
 17	244	7736017801295719	CMakeFiles/mySTL.dir/test/my_ratio_test.cpp.obj.ddi	68d5a5ddd06b9a66
 341	849	7736017804549646	CMakeFiles/mySTL.dir/test/my_ratio_test.cpp.obj	6e8c73da6caac2ac
-17	258	7736019953329199	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj.ddi	1a44fdcc0df96bd9
-258	350	7736019955740201	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj.modmap	a3466cd2df841d6f
-356	873	7736019956720734	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj	efd23f8369a89df9
-22	118	7736037649643646	CMakeFiles/mySTL.dir/CXX.dd	a3466cd2df841d6f
-22	118	7736037649643646	D:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/mySTL.dir/CXXModules.json	a3466cd2df841d6f
-22	118	7736037649643646	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj.modmap	a3466cd2df841d6f
+5	338	7736349303552931	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj.ddi	1a44fdcc0df96bd9
+338	468	7736349306875038	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj.modmap	a3466cd2df841d6f
+475	1335	7736349308249732	CMakeFiles/mySTL.dir/test/my_duration_test.cpp.obj	efd23f8369a89df9

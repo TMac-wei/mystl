@@ -2,7 +2,6 @@
  * @file      my_is_array.h
  * @brief     [判断是否是array]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

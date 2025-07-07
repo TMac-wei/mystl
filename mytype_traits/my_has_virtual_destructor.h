@@ -2,7 +2,6 @@
  * @file      my_has_virtual_destructor.h
  * @brief     [判断是否具有虚析构函数]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

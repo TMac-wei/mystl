@@ -2,7 +2,6 @@
  * @file      my_is_class.h
  * @brief     [判断是否是类类型 class 或 struct，排除 union]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

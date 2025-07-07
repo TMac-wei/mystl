@@ -2,7 +2,6 @@
  * @file      my_decay.h
  * @brief     [移除指针、引用、数组修饰符]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

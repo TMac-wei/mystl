@@ -2,7 +2,6 @@
  * @file      my_queue.h
  * @brief     [根据deque实现queue]
  * @author    Weijh
- * @date      2025/7/4
  * @version   1.0
  */
 

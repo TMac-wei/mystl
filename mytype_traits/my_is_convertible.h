@@ -2,7 +2,6 @@
  * @file      my_is_convertible.h
  * @brief     [是否可以类型转换(隐式转换)]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

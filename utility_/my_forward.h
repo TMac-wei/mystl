@@ -2,7 +2,6 @@
  * @file      my_forward.h
  * @brief     [万能引用+完美转发]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

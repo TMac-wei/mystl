@@ -2,7 +2,6 @@
  * @file      my_type_identity.h
  * @brief     类型包装器
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

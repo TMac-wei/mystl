@@ -2,7 +2,6 @@
  * @file      my_is_abstract.h
  * @brief     [是否是抽象类]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

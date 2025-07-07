@@ -2,7 +2,6 @@
  * @file      my_multiset.h
  * @brief     [my_multiset]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

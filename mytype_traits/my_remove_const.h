@@ -2,7 +2,6 @@
  * @file      my_remove_const.h
  * @brief     [remove_const]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

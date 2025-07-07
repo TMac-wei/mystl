@@ -2,7 +2,6 @@
  * @file      my_add_pointer.h
  * @brief     类型萃取工具 add_pointer<T>:将类型 T 转换为指针类型 T*
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

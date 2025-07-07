@@ -2,7 +2,6 @@
  * @file      my_is_signed.h
  * @brief     [判断是否是有符号类型]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

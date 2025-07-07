@@ -2,7 +2,6 @@
  * @file      my_my::unordered_set_test.cpp
  * @brief     [my::unordered_set_test]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 #include "my_unordered_set.h"

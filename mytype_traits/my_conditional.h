@@ -2,7 +2,6 @@
  * @file      my_conditional.h
  * @brief     [类型选择器]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_rbtree.h
  * @brief     [my_rbtree]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_ratio.h
  * @brief     [复现chrono中的ratio，之后以此为基础完成duration等]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_remove_reference.h
  * @brief      移除类型 T 的引用修饰符，（无论是左值引用 T& 还是右值引用 T&&），返回裸类型 T
  * @author    Weijh
- * @date      2025/7/2
  * @version   1.0
  */
 

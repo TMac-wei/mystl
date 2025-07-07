@@ -2,7 +2,6 @@
  * @file      my_unordered_multiset.h
  * @brief     [unordered_multiset]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

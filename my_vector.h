@@ -2,7 +2,6 @@
  * @file      my_vector.h
  * @brief     [复刻std:vector]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

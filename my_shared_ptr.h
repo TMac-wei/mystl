@@ -2,7 +2,6 @@
  * @file      my_shared_ptr.h
  * @brief     [my_shared_ptr]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

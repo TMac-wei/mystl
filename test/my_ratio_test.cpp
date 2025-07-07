@@ -2,7 +2,6 @@
  * @file      my_ratio_test.cpp
  * @brief     [ratio_test]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_is_unsigned.h
  * @brief     [判断无符号类型]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_remove_volatile.h
  * @brief     [移除了类型的volatile]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

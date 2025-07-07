@@ -2,7 +2,6 @@
  * @file      my_optional.h
  * @brief     [optional的复现，包含主要的成员接口]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

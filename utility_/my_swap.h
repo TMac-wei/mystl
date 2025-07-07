@@ -2,7 +2,6 @@
  * @file      my_swap.h
  * @brief     [swap]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

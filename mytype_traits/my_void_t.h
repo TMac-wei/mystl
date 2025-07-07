@@ -2,7 +2,6 @@
  * @file      my_void_t.h
  * @brief     [用于获取 void 类型]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

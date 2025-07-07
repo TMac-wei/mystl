@@ -2,7 +2,6 @@
  * @file      my_duration_test.cpp
  * @brief     [my_duration_test]
  * @author    Weijh
- * @date      2025/7/7
  * @version   1.0
  */
 

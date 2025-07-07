@@ -2,7 +2,6 @@
  * @file      my_exception.h
  * @brief     [异常处理]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

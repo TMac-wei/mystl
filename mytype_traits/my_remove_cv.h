@@ -2,7 +2,6 @@
  * @file      my_remove_cv.h
  * @brief     [移除cv]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

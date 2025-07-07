@@ -2,7 +2,6 @@
  * @file      my_list.h
  * @brief     [my_list复现]
  * @author    Weijh
- * @date      2025/7/5
  * @version   1.0
  */
 

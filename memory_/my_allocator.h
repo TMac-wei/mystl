@@ -2,7 +2,6 @@
  * @file      my_allocator.h
  * @brief     [分配器]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

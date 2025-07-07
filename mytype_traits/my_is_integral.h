@@ -2,7 +2,6 @@
  * @file      my_is_integral.h
  * @brief     [is_integral]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 

@@ -2,7 +2,6 @@
  * @file      my_is_bounded_array.h
  * @brief     [判断给定类型 T 是否是边界未知的数组类型（unbounded array）]
  * @author    Weijh
- * @date      2025/7/3
  * @version   1.0
  */
 
