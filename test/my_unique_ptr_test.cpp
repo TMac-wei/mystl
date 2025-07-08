@@ -5,15 +5,9 @@
  * @version   1.0
  */
 
-//
-// Author:      Weijh
-// Created on:  2025/6/27.
-//
-#include "my_unique_ptr.h"
+#include "../my_unique_ptr.h"
 #include <iostream>
 #include <memory>
-
-
 
 /// 基本使用和析构
 struct Foo {

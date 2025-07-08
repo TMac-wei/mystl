@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "my_shared_ptr.h"
+#include "../my_shared_ptr.h"
 
 #include <iostream>
 #include <cassert>

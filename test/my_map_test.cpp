@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "my_map.h"
+#include "../my_map.h"
 #include <iostream>
 #include <cassert>
 #include <string>

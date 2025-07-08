@@ -9,7 +9,9 @@
 
 
 
+
 # 1 "D:/c++_projects/mySTL/chrono_/my_duration.h" 1
+
 
 
 
@@ -41506,8 +41508,9 @@ namespace std
 # 85 "D:/msys64/mingw64/include/c++/14.2.0/iostream" 3
 
 }
-# 10 "D:/c++_projects/mySTL/chrono_/my_duration.h" 2
+# 11 "D:/c++_projects/mySTL/chrono_/my_duration.h" 2
 # 1 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 1
+
 
 
 
@@ -41610,7 +41613,7 @@ namespace std
   using ::uintptr_t;
 # 142 "D:/msys64/mingw64/include/c++/14.2.0/cstdint" 3
 }
-# 10 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 2
+# 11 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 2
 # 1 "D:/msys64/mingw64/include/c++/14.2.0/limits" 1 3
 # 40 "D:/msys64/mingw64/include/c++/14.2.0/limits" 3
        
@@ -43250,7 +43253,7 @@ __extension__ template<> struct numeric_limits<_Float128> { static constexpr boo
 
 
 }
-# 11 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 2
+# 12 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 2
 # 1 "D:/msys64/mingw64/include/c++/14.2.0/climits" 1 3
 # 39 "D:/msys64/mingw64/include/c++/14.2.0/climits" 3
        
@@ -43259,12 +43262,12 @@ __extension__ template<> struct numeric_limits<_Float128> { static constexpr boo
 
 # 1 "D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h" 1 3 4
 # 43 "D:/msys64/mingw64/include/c++/14.2.0/climits" 2 3
-# 12 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 2
+# 13 "D:/c++_projects/mySTL/chrono_/my_ratio.h" 2
 
 
 
 
-# 15 "D:/c++_projects/mySTL/chrono_/my_ratio.h"
+# 16 "D:/c++_projects/mySTL/chrono_/my_ratio.h"
 namespace my {
 
     template<intmax_t Xp_>
@@ -43513,7 +43516,7 @@ namespace my {
         static const bool value = !ratio_equal<R1, R2>::value;
     };
 }
-# 11 "D:/c++_projects/mySTL/chrono_/my_duration.h" 2
+# 12 "D:/c++_projects/mySTL/chrono_/my_duration.h" 2
 
 namespace my {
 
@@ -43668,7 +43671,7 @@ constexpr auto operator+(const my::duration<Rep1_, Period1_> &lhs,
 template<typename Rep1_, typename Period1_, typename Rep2_, typename Period2_>
 constexpr auto operator-(const my::duration<Rep1_, Period1_> &lhs,
                          const my::duration<Rep2_, Period2_> &rhs) {
-# 181 "D:/c++_projects/mySTL/chrono_/my_duration.h"
+# 182 "D:/c++_projects/mySTL/chrono_/my_duration.h"
     using CommonPeriod = typename my::higher_precision_duration<Rep1_, Period1_, Rep2_, Period2_>::type::period;
 
 
@@ -43697,7 +43700,7 @@ constexpr auto operator%(const my::duration<Rep1, Period1> &lhs,
     using Common = typename std::common_type<my::duration<Rep1, Period1>, my::duration<Rep2, Period2>>::type;
     return Common(lhs).count() % Common(rhs).count();
 }
-# 8 "D:/c++_projects/mySTL/test/my_duration_test.cpp" 2
+# 9 "D:/c++_projects/mySTL/test/my_duration_test.cpp" 2
 
 using namespace my;
 
@@ -43738,5 +43741,5 @@ int main() {
 
     ms2 /= 2;
     std::cout << ms2.count() << std::endl;
-# 64 "D:/c++_projects/mySTL/test/my_duration_test.cpp"
+# 65 "D:/c++_projects/mySTL/test/my_duration_test.cpp"
 }

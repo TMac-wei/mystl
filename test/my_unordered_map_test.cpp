@@ -5,8 +5,8 @@
  * @version   1.0
  */
 
-#include "my_unordered_map.h"
-#include "my_string.h"
+#include "../my_unordered_map.h"
+#include "../my_string.h"
 
 #include <cassert>
 #include <iostream>

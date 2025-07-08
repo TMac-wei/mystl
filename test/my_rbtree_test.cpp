@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "my_rbtree.h"
+#include "../my_rbtree.h"
 #include <iostream>
 #include <vector>
 

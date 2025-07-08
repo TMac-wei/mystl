@@ -5,9 +5,9 @@
  * @version   1.0
  */
 
-#include "my_priority_queue.h"
+#include "../my_priority_queue.h"
 #include <iostream>
-#include "my_string.h"
+#include "../my_string.h"
 
 void test_basic()
 {

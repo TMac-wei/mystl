@@ -119,9 +119,9 @@ add_executable(mySTL
         my_unique_ptr.h
 #        test/my_unique_ptr_test.cpp
         my_shared_ptr.h
-#        test/my_shared_ptr_test.cpp
+        test/my_shared_ptr_test.cpp
         chrono_/my_ratio.h
 #        test/my_ratio_test.cpp
         chrono_/my_duration.h
-        test/my_duration_test.cpp
+#        test/my_duration_test.cpp
 )

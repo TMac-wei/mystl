@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "my_deque.h"
+#include "../my_deque.h"
 
 #include <iostream>
 #include <vector>

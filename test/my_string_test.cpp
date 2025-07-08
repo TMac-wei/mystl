@@ -7,7 +7,7 @@
 
 #include <cassert>
 #include <iostream>
-#include "my_string.h"
+#include "../my_string.h"
 
 void test_basic_operations() {
     using my::string;

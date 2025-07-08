@@ -7,7 +7,7 @@
 
 #include <string>
 #include <iostream>
-#include "my_pair.h"
+#include "../my_pair.h"
 using namespace my;
 
 int main() {
