@@ -15,9 +15,9 @@
 | 模块目录       | 核心内容                                                                 |  
 |----------------|--------------------------------------------------------------------------|  
 | `chrono_`      | 简单时间相关工具（`duration`/`ratio` 基础实现）                          |  
-| `iterator_`    | 各类迭代器（插入迭代器、反向迭代器、流迭代器等）及迭代器辅助工具（`advance`/`distance`） |  
+| `iterator_`    | 各类迭代器（插入迭代器、反向迭代器等）及迭代器辅助工具（`advance`/`distance`） |  
 | `memory_`      | 内存分配与管理相关（需结合代码确认具体实现，如 allocator 基础逻辑）       |  
-| `mystl_type_traits` | 类型萃取工具（判断类型属性、提取类型特征）                               |  
+| `my_type_traits` | 类型萃取工具（判断类型属性、提取类型特征）                               |  
 | `test`         | 测试用例（验证各组件功能正确性，该文件夹的内容仅仅是我自己在完成头文件编写之后的测试用例，若需补充用例时可参考）                     |  
 | `utility_`     | 辅助工具（如 `pair`/`optional` 等基础结构）                              |  
 | 根目录文件     | 容器（`vector`/`list`/`map` 等）、智能指针（`shared_ptr`）、字符串（`string`）等核心实现 |  
@@ -54,10 +54,10 @@
    make  
    ```  
 
-4. **运行测试**（需补充测试用例到 `test` 目录，或直接测试示例代码）：  
+4. **运行测试**（需补充测试用例到 `test` 目录，或直接测试示例代码，本人此处直接针对每个特定头文件进行测试）：  
    ```bash  
    # 假设 test 目录有 main.cpp，编译后执行  
-   ./test/mystl_test  
+   ./test/myxxx_test.cpp  
    ```  
 
 
@@ -68,7 +68,7 @@
 #include <iostream>  
 
 int main() {  
-    mystl::vector<int> vec;  
+    my::vector<int> vec;  
     for (int i = 0; i < 5; ++i) {  
         vec.push_back(i);  
     }  
@@ -88,7 +88,7 @@ int main() {
 #include <iostream>  
 
 int main() {  
-    mystl::list<int> my_list = {1, 2, 3, 4};  
+    my::list<int> my_list = {1, 2, 3, 4};  
 
     // 反向遍历：4 3 2 1  
     for (auto it = my_list.rbegin(); it != my_list.rend(); ++it) {  
@@ -104,15 +104,15 @@ int main() {
 mySTL/  
 ├── chrono_/          # 时间相关工具（duration、ratio 等）  
 ├── cmake-build-debug/ # CMake 构建临时目录（已忽略，无需关注）  
-├── file/             # 文件操作相关（需结合代码确认具体内容）  
+├── file/             # 该文件夹中为部分容器的思维导图 
 ├── iterator_/        # 迭代器核心实现（插入迭代器、反向迭代器等）  
 ├── memory_/          # 内存管理（分配器、内存工具）  
-├── mystl_type_traits/ # 类型萃取工具（判断类型属性、提取特征）  
+├── mytype_traits/    # 类型萃取工具（判断类型属性、提取特征）  
 ├── test/             # 测试用例（需补充完善，验证组件正确性）  
-├── utility_/         # 辅助工具（pair、optional 等）  
+├── utility_/         # 辅助工具（forward、move 等）  
 ├── CMakeLists.txt    # CMake 构建配置文件  
-├── main.cpp          # 示例入口（可编写简单测试）  
-├── my_algorithm.h    # 泛型算法（排序、查找等）  
+├── main.cpp          # 示例入口（可自行编写相关的代码）  
+├── my_algorithm.h    # 泛型算法（min、max等）  
 ├── my_array.h        # 数组容器实现  
 ├── ...（其他容器/算法头文件）...  
 ```  
@@ -120,10 +120,10 @@ mySTL/
 
 ## 学习与贡献  
 ### 学习路径建议  
-1. **从基础组件开始**：先看 `utility_`（如 `pair`/`optional`）、`mystl_type_traits`（类型萃取）  
+1. **从基础组件开始**：先看 `utility_`（如 `forward`/`move`）、`my_type_traits`（类型萃取）  
 2. **理解迭代器**：`iterator_` 目录的迭代器实现 + `my_iterator.h`，掌握 traits 技术  
-3. **容器实现**：`my_vector.h`/`my_list.h`（顺序容器）→ `my_map.h`/`my_set.h`（关联容器）  
-4. **算法与适配器**：`my_algorithm.h`（排序/查找） + `my_stack.h`/`my_queue.h`（适配器）  
+3. **容器实现**：`my_vector.h`/`my_list.h`（顺序容器）→ `my_unordered_map.h`/`my_unordered_set.h`（关联容器）  
+4. **算法与适配器**：`my_algorithm.h` + `my_stack.h`/`my_queue.h`（适配器）  
 
 
 ### 贡献代码  

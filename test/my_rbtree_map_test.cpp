@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-#include "../my_rbtree_map.h"
+#include "my_rbtree_map.h"
 
 #include <string>
 

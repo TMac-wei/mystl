@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_array.h"
+#include "my_array.h"
 #include <iostream>
 #include <array>
 

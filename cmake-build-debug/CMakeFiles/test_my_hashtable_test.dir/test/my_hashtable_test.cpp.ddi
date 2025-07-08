@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/test_my_hashtable_test.dir/test/my_hashtable_test.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

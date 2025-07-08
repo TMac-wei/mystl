@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/test_my_shared_ptr_test.dir/test/my_shared_ptr_test.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

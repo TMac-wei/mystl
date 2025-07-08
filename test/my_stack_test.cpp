@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_stack.h"
+#include "my_stack.h"
 
 #include <iostream>
 #include <string>

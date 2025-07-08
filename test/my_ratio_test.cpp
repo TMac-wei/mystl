@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../chrono_/my_ratio.h"
+#include "chrono_/my_ratio.h"
 #include <iostream>
 
 using namespace my;

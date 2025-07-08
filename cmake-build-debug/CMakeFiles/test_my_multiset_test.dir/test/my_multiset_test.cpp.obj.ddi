@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles\\test_my_multiset_test.dir\\test\\my_multiset_test.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

@@ -14,7 +14,7 @@
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__mySTL_Debug
+rule CXX_SCAN__test_mt_pair_test_Debug
   depfile = $DEP_FILE
   command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -23,8 +23,8 @@ rule CXX_SCAN__mySTL_Debug
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__mySTL_Debug
-  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\mySTL.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+rule CXX_DYNDEP__test_mt_pair_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_mt_pair_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -34,7 +34,7 @@ rule CXX_DYNDEP__mySTL_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__mySTL_scanned_Debug
+rule CXX_COMPILER__test_mt_pair_test_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -44,7 +44,7 @@ rule CXX_COMPILER__mySTL_scanned_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__mySTL_unscanned_Debug
+rule CXX_COMPILER__test_mt_pair_test_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -54,7 +54,1232 @@ rule CXX_COMPILER__mySTL_unscanned_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__mySTL_Debug
+rule CXX_EXECUTABLE_LINKER__test_mt_pair_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_array_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_array_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_array_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_array_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_array_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_array_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_deque_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_deque_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_deque_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_deque_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_deque_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_deque_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_duration_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_duration_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_duration_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_duration_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_duration_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_duration_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_hashtable_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_hashtable_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_hashtable_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_hashtable_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_hashtable_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_hashtable_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_heap_sort_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_heap_sort_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_heap_sort_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_heap_sort_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_heap_sort_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_heap_sort_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_list_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_list_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_list_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_list_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_list_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_list_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_map_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_map_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_map_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_map_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_map_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_map_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_multiset_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_multiset_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_multiset_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_multiset_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_multiset_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_multiset_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_optional_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_optional_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_optional_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_optional_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_optional_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_optional_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_priority_queue_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_priority_queue_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_priority_queue_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_priority_queue_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_priority_queue_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_priority_queue_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_queue_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_queue_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_queue_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_queue_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_queue_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_queue_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_ratio_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_ratio_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_ratio_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_ratio_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_ratio_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_ratio_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_rbtree_map_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_rbtree_map_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_rbtree_map_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_rbtree_map_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_rbtree_map_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_rbtree_map_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_rbtree_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_rbtree_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_rbtree_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_rbtree_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_rbtree_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_rbtree_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_set_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_set_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_set_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_set_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_set_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_set_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_shared_ptr_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_shared_ptr_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_shared_ptr_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_shared_ptr_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_shared_ptr_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_shared_ptr_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_stack_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_stack_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_stack_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_stack_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_stack_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_stack_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_string_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_string_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_string_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_string_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_string_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_string_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_tuple_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_tuple_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_tuple_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_tuple_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_tuple_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_tuple_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_unique_ptr_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_unique_ptr_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_unique_ptr_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unique_ptr_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unique_ptr_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_unique_ptr_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_unordered_map_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_unordered_map_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_unordered_map_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_map_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_map_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_unordered_map_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_unordered_multimap_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_unordered_multimap_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_unordered_multimap_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_multimap_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_multimap_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_unordered_multimap_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_unordered_multiset_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_unordered_multiset_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_unordered_multiset_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_multiset_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_multiset_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_unordered_multiset_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_unordered_set_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_unordered_set_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_unordered_set_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_set_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_unordered_set_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_unordered_set_test_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__test_my_vector_test_Debug
+  depfile = $DEP_FILE
+  command = D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__test_my_vector_test_Debug
+  command = "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=CMakeFiles\test_my_vector_test.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_vector_test_scanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__test_my_vector_test_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__test_my_vector_test_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

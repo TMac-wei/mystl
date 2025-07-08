@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_heap_sort.h"
+#include "my_heap_sort.h"
 
 #include <algorithm>
 #include <cassert>

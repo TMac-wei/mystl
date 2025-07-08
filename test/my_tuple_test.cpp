@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_tuple.h"
+#include "my_tuple.h"
 
 #include <iostream>
 

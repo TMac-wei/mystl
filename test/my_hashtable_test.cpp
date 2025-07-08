@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_hashtable.h"
+#include "my_hashtable.h"
 
 #include <cassert>
 #include <string>

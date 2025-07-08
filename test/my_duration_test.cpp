@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../chrono_/my_duration.h"
+#include "chrono_/my_duration.h"
 
 using namespace my;
 

@@ -130,7 +130,7 @@ ForwordIterator uninitialized_move_a(InputIterator first, InputIterator last, Fo
             /// 使用move将源对象转移构造到目标对象
 //            alloc.construct(std::addressof(*cur), std::move(*first));
             /// 使用自己手写的address和move，但是一般都是推荐使用std:;addressof()
-            alloc.construct(std::addressof(*cur), move(*first));
+            alloc.construct(std::addressof(*cur), my::move(*first));
         }
         return cur;
     } catch(...) {

@@ -1,0 +1,3 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/test_my_rbtree_test.dir/test/my_rbtree_test.cpp.obj: dyndep
+

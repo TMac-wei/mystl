@@ -4,7 +4,7 @@
  * @author    Weijh
  * @version   1.0
  */
-#include "../my_unordered_set.h"
+#include "my_unordered_set.h"
 #include <iostream>
 #include <vector>
 #include <cassert>

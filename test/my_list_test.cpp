@@ -13,7 +13,7 @@
 #include <cassert>
 #include <string>
 #include <vector>
-#include "../my_list.h"
+#include "my_list.h"
 
 #if 1
 void test_basic_insert_pop() {

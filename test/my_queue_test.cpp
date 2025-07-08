@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_queue.h"
+#include "my_queue.h"
 #include <iostream>
 
 int main()

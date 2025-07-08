@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_optional.h"
+#include "my_optional.h"
 #include <cassert>
 #include <string>
 #include <iostream>

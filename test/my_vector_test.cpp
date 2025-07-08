@@ -8,7 +8,7 @@
 #include <iostream>
 #include <cassert>
 #include <string>
-#include "../my_vector.h"
+#include "my_vector.h"
 
 using namespace my;
 

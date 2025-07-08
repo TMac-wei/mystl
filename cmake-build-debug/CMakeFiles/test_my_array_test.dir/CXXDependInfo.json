@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "D:/c++_projects/mySTL/cmake-build-debug",
+	"dir-cur-src" : "D:/c++_projects/mySTL",
+	"dir-top-bld" : "D:/c++_projects/mySTL/cmake-build-debug",
+	"dir-top-src" : "D:/c++_projects/mySTL",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"D:\\c++_projects\\mySTL"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "D:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_array_test.dir"
+}

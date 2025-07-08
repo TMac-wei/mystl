@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_unique_ptr.h"
+#include "my_unique_ptr.h"
 #include <iostream>
 #include <memory>
 

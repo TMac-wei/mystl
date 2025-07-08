@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles\\test_my_heap_sort_test.dir\\test\\my_heap_sort_test.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

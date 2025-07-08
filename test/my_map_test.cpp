@@ -5,7 +5,7 @@
  * @version   1.0
  */
 
-#include "../my_map.h"
+#include "my_map.h"
 #include <iostream>
 #include <cassert>
 #include <string>
@@ -120,7 +120,7 @@ void test_my_multimap() {
 int main() {
     test();
     test_my_map();
-//    test_my_multimap();
+    test_my_multimap();
     return 0;
 }
 

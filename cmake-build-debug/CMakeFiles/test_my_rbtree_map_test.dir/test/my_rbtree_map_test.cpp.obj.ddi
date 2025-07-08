@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles\\test_my_rbtree_map_test.dir\\test\\my_rbtree_map_test.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
