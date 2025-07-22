@@ -1,42 +1,31 @@
 "D:\software\JetBrains\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/software/JetBrains/CLion 2024.3.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\c++_projects\mySTL -B D:\c++_projects\mySTL\cmake-build-debug
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: D:/msys64/mingw64/bin/cc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: D:/msys64/mingw64/bin/c++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Added test: test_mt_pair_test from D:/c++_projects/mySTL/test/mt_pair_test.cpp
--- Added test: test_my_array_test from D:/c++_projects/mySTL/test/my_array_test.cpp
--- Added test: test_my_deque_test from D:/c++_projects/mySTL/test/my_deque_test.cpp
--- Added test: test_my_duration_test from D:/c++_projects/mySTL/test/my_duration_test.cpp
--- Added test: test_my_hashtable_test from D:/c++_projects/mySTL/test/my_hashtable_test.cpp
--- Added test: test_my_heap_sort_test from D:/c++_projects/mySTL/test/my_heap_sort_test.cpp
--- Added test: test_my_list_test from D:/c++_projects/mySTL/test/my_list_test.cpp
--- Added test: test_my_map_test from D:/c++_projects/mySTL/test/my_map_test.cpp
--- Added test: test_my_multiset_test from D:/c++_projects/mySTL/test/my_multiset_test.cpp
--- Added test: test_my_optional_test from D:/c++_projects/mySTL/test/my_optional_test.cpp
--- Added test: test_my_priority_queue_test from D:/c++_projects/mySTL/test/my_priority_queue_test.cpp
--- Added test: test_my_queue_test from D:/c++_projects/mySTL/test/my_queue_test.cpp
--- Added test: test_my_ratio_test from D:/c++_projects/mySTL/test/my_ratio_test.cpp
--- Added test: test_my_rbtree_map_test from D:/c++_projects/mySTL/test/my_rbtree_map_test.cpp
--- Added test: test_my_rbtree_test from D:/c++_projects/mySTL/test/my_rbtree_test.cpp
--- Added test: test_my_set_test from D:/c++_projects/mySTL/test/my_set_test.cpp
--- Added test: test_my_shared_ptr_test from D:/c++_projects/mySTL/test/my_shared_ptr_test.cpp
--- Added test: test_my_stack_test from D:/c++_projects/mySTL/test/my_stack_test.cpp
--- Added test: test_my_string_test from D:/c++_projects/mySTL/test/my_string_test.cpp
--- Added test: test_my_tuple_test from D:/c++_projects/mySTL/test/my_tuple_test.cpp
--- Added test: test_my_unique_ptr_test from D:/c++_projects/mySTL/test/my_unique_ptr_test.cpp
--- Added test: test_my_unordered_map_test from D:/c++_projects/mySTL/test/my_unordered_map_test.cpp
--- Added test: test_my_unordered_multimap_test from D:/c++_projects/mySTL/test/my_unordered_multimap_test.cpp
--- Added test: test_my_unordered_multiset_test from D:/c++_projects/mySTL/test/my_unordered_multiset_test.cpp
--- Added test: test_my_unordered_set_test from D:/c++_projects/mySTL/test/my_unordered_set_test.cpp
--- Added test: test_my_vector_test from D:/c++_projects/mySTL/test/my_vector_test.cpp
--- Configuring done (5.6s)
+-- Added test: test_my_array_test (source: D:/c++_projects/mySTL/test/my_array_test.cpp)
+-- Added test: test_my_deque_test (source: D:/c++_projects/mySTL/test/my_deque_test.cpp)
+-- Added test: test_my_duration_test (source: D:/c++_projects/mySTL/test/my_duration_test.cpp)
+-- Added test: test_my_hashtable_test (source: D:/c++_projects/mySTL/test/my_hashtable_test.cpp)
+-- Added test: test_my_heap_sort_test (source: D:/c++_projects/mySTL/test/my_heap_sort_test.cpp)
+-- Added test: test_my_list_test (source: D:/c++_projects/mySTL/test/my_list_test.cpp)
+-- Added test: test_my_map_test (source: D:/c++_projects/mySTL/test/my_map_test.cpp)
+-- Added test: test_my_multiset_test (source: D:/c++_projects/mySTL/test/my_multiset_test.cpp)
+-- Added test: test_my_mutex_test (source: D:/c++_projects/mySTL/test/my_mutex_test.cpp)
+-- Added test: test_my_optional_test (source: D:/c++_projects/mySTL/test/my_optional_test.cpp)
+-- Added test: test_my_pair_test (source: D:/c++_projects/mySTL/test/my_pair_test.cpp)
+-- Added test: test_my_priority_queue_test (source: D:/c++_projects/mySTL/test/my_priority_queue_test.cpp)
+-- Added test: test_my_queue_test (source: D:/c++_projects/mySTL/test/my_queue_test.cpp)
+-- Added test: test_my_ratio_test (source: D:/c++_projects/mySTL/test/my_ratio_test.cpp)
+-- Added test: test_my_rbtree_map_test (source: D:/c++_projects/mySTL/test/my_rbtree_map_test.cpp)
+-- Added test: test_my_rbtree_test (source: D:/c++_projects/mySTL/test/my_rbtree_test.cpp)
+-- Added test: test_my_set_test (source: D:/c++_projects/mySTL/test/my_set_test.cpp)
+-- Added test: test_my_shared_ptr_test (source: D:/c++_projects/mySTL/test/my_shared_ptr_test.cpp)
+-- Added test: test_my_stack_test (source: D:/c++_projects/mySTL/test/my_stack_test.cpp)
+-- Added test: test_my_string_test (source: D:/c++_projects/mySTL/test/my_string_test.cpp)
+-- Added test: test_my_tuple_test (source: D:/c++_projects/mySTL/test/my_tuple_test.cpp)
+-- Added test: test_my_unique_ptr_test (source: D:/c++_projects/mySTL/test/my_unique_ptr_test.cpp)
+-- Added test: test_my_unordered_map_test (source: D:/c++_projects/mySTL/test/my_unordered_map_test.cpp)
+-- Added test: test_my_unordered_multimap_test (source: D:/c++_projects/mySTL/test/my_unordered_multimap_test.cpp)
+-- Added test: test_my_unordered_multiset_test (source: D:/c++_projects/mySTL/test/my_unordered_multiset_test.cpp)
+-- Added test: test_my_unordered_set_test (source: D:/c++_projects/mySTL/test/my_unordered_set_test.cpp)
+-- Added test: test_my_vector_test (source: D:/c++_projects/mySTL/test/my_vector_test.cpp)
+-- Configuring done (0.4s)
 -- Generating done (0.2s)
 -- Build files have been written to: D:/c++_projects/mySTL/cmake-build-debug

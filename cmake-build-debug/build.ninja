@@ -41,55 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/c++_projects/mySTL/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target test_mt_pair_test
-
-
-#############################################
-# Order-only phony target for test_mt_pair_test
-
-build cmake_object_order_depends_target_test_mt_pair_test: phony || .
-
-build CMakeFiles/test_mt_pair_test.dir/test/mt_pair_test.cpp.obj.ddi: CXX_SCAN__test_mt_pair_test_Debug D$:/c++_projects/mySTL/test/mt_pair_test.cpp || cmake_object_order_depends_target_test_mt_pair_test
-  DEP_FILE = CMakeFiles\test_mt_pair_test.dir\test\mt_pair_test.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\test_mt_pair_test.dir\test\mt_pair_test.cpp.obj.ddi
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/c++_projects/mySTL
-  OBJ_FILE = CMakeFiles\test_mt_pair_test.dir\test\mt_pair_test.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\test_mt_pair_test.dir\test\mt_pair_test.cpp.obj.ddi.i
-
-build CMakeFiles/test_mt_pair_test.dir/test/mt_pair_test.cpp.obj: CXX_COMPILER__test_mt_pair_test_scanned_Debug D$:/c++_projects/mySTL/test/mt_pair_test.cpp | CMakeFiles/test_mt_pair_test.dir/test/mt_pair_test.cpp.obj.modmap || cmake_object_order_depends_target_test_mt_pair_test CMakeFiles/test_mt_pair_test.dir/CXX.dd
-  DEP_FILE = CMakeFiles\test_mt_pair_test.dir\test\mt_pair_test.cpp.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\test_mt_pair_test.dir\test\mt_pair_test.cpp.obj.modmap
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/c++_projects/mySTL
-  OBJECT_DIR = CMakeFiles\test_mt_pair_test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test_mt_pair_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_mt_pair_test.dir\
-  TARGET_PDB = test_mt_pair_test.pdb
-  dyndep = CMakeFiles/test_mt_pair_test.dir/CXX.dd
-
-build CMakeFiles/test_mt_pair_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_mt_pair_test.dir/CXXModules.json CMakeFiles/test_mt_pair_test.dir/test/mt_pair_test.cpp.obj.modmap: CXX_DYNDEP__test_mt_pair_test_Debug CMakeFiles/test_mt_pair_test.dir/test/mt_pair_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_mt_pair_test.dir/CXXDependInfo.json
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_mt_pair_test
-
-
-#############################################
-# Link the executable test_mt_pair_test.exe
-
-build test_mt_pair_test.exe: CXX_EXECUTABLE_LINKER__test_mt_pair_test_Debug CMakeFiles/test_mt_pair_test.dir/test/mt_pair_test.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\test_mt_pair_test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_mt_pair_test.dir\
-  TARGET_FILE = test_mt_pair_test.exe
-  TARGET_IMPLIB = libtest_mt_pair_test.dll.a
-  TARGET_PDB = test_mt_pair_test.pdb
-
-# =============================================================================
 # Object build statements for EXECUTABLE target test_my_array_test
 
 
@@ -113,8 +64,6 @@ build CMakeFiles/test_my_array_test.dir/test/my_array_test.cpp.obj: CXX_COMPILER
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_array_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_array_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_array_test.dir\
-  TARGET_PDB = test_my_array_test.pdb
   dyndep = CMakeFiles/test_my_array_test.dir/CXX.dd
 
 build CMakeFiles/test_my_array_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_array_test.dir/CXXModules.json CMakeFiles/test_my_array_test.dir/test/my_array_test.cpp.obj.modmap: CXX_DYNDEP__test_my_array_test_Debug CMakeFiles/test_my_array_test.dir/test/my_array_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_array_test.dir/CXXDependInfo.json
@@ -133,10 +82,9 @@ build test_my_array_test.exe: CXX_EXECUTABLE_LINKER__test_my_array_test_Debug CM
   OBJECT_DIR = CMakeFiles\test_my_array_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_array_test.dir\
   TARGET_FILE = test_my_array_test.exe
   TARGET_IMPLIB = libtest_my_array_test.dll.a
-  TARGET_PDB = test_my_array_test.pdb
+  TARGET_PDB = test_my_array_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_deque_test
@@ -162,8 +110,6 @@ build CMakeFiles/test_my_deque_test.dir/test/my_deque_test.cpp.obj: CXX_COMPILER
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_deque_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_deque_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_deque_test.dir\
-  TARGET_PDB = test_my_deque_test.pdb
   dyndep = CMakeFiles/test_my_deque_test.dir/CXX.dd
 
 build CMakeFiles/test_my_deque_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_deque_test.dir/CXXModules.json CMakeFiles/test_my_deque_test.dir/test/my_deque_test.cpp.obj.modmap: CXX_DYNDEP__test_my_deque_test_Debug CMakeFiles/test_my_deque_test.dir/test/my_deque_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_deque_test.dir/CXXDependInfo.json
@@ -182,10 +128,9 @@ build test_my_deque_test.exe: CXX_EXECUTABLE_LINKER__test_my_deque_test_Debug CM
   OBJECT_DIR = CMakeFiles\test_my_deque_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_deque_test.dir\
   TARGET_FILE = test_my_deque_test.exe
   TARGET_IMPLIB = libtest_my_deque_test.dll.a
-  TARGET_PDB = test_my_deque_test.pdb
+  TARGET_PDB = test_my_deque_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_duration_test
@@ -211,8 +156,6 @@ build CMakeFiles/test_my_duration_test.dir/test/my_duration_test.cpp.obj: CXX_CO
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_duration_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_duration_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_duration_test.dir\
-  TARGET_PDB = test_my_duration_test.pdb
   dyndep = CMakeFiles/test_my_duration_test.dir/CXX.dd
 
 build CMakeFiles/test_my_duration_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_duration_test.dir/CXXModules.json CMakeFiles/test_my_duration_test.dir/test/my_duration_test.cpp.obj.modmap: CXX_DYNDEP__test_my_duration_test_Debug CMakeFiles/test_my_duration_test.dir/test/my_duration_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_duration_test.dir/CXXDependInfo.json
@@ -231,10 +174,9 @@ build test_my_duration_test.exe: CXX_EXECUTABLE_LINKER__test_my_duration_test_De
   OBJECT_DIR = CMakeFiles\test_my_duration_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_duration_test.dir\
   TARGET_FILE = test_my_duration_test.exe
   TARGET_IMPLIB = libtest_my_duration_test.dll.a
-  TARGET_PDB = test_my_duration_test.pdb
+  TARGET_PDB = test_my_duration_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_hashtable_test
@@ -260,8 +202,6 @@ build CMakeFiles/test_my_hashtable_test.dir/test/my_hashtable_test.cpp.obj: CXX_
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_hashtable_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_hashtable_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_hashtable_test.dir\
-  TARGET_PDB = test_my_hashtable_test.pdb
   dyndep = CMakeFiles/test_my_hashtable_test.dir/CXX.dd
 
 build CMakeFiles/test_my_hashtable_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_hashtable_test.dir/CXXModules.json CMakeFiles/test_my_hashtable_test.dir/test/my_hashtable_test.cpp.obj.modmap: CXX_DYNDEP__test_my_hashtable_test_Debug CMakeFiles/test_my_hashtable_test.dir/test/my_hashtable_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_hashtable_test.dir/CXXDependInfo.json
@@ -280,10 +220,9 @@ build test_my_hashtable_test.exe: CXX_EXECUTABLE_LINKER__test_my_hashtable_test_
   OBJECT_DIR = CMakeFiles\test_my_hashtable_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_hashtable_test.dir\
   TARGET_FILE = test_my_hashtable_test.exe
   TARGET_IMPLIB = libtest_my_hashtable_test.dll.a
-  TARGET_PDB = test_my_hashtable_test.pdb
+  TARGET_PDB = test_my_hashtable_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_heap_sort_test
@@ -309,8 +248,6 @@ build CMakeFiles/test_my_heap_sort_test.dir/test/my_heap_sort_test.cpp.obj: CXX_
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_heap_sort_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_heap_sort_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_heap_sort_test.dir\
-  TARGET_PDB = test_my_heap_sort_test.pdb
   dyndep = CMakeFiles/test_my_heap_sort_test.dir/CXX.dd
 
 build CMakeFiles/test_my_heap_sort_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_heap_sort_test.dir/CXXModules.json CMakeFiles/test_my_heap_sort_test.dir/test/my_heap_sort_test.cpp.obj.modmap: CXX_DYNDEP__test_my_heap_sort_test_Debug CMakeFiles/test_my_heap_sort_test.dir/test/my_heap_sort_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_heap_sort_test.dir/CXXDependInfo.json
@@ -329,10 +266,9 @@ build test_my_heap_sort_test.exe: CXX_EXECUTABLE_LINKER__test_my_heap_sort_test_
   OBJECT_DIR = CMakeFiles\test_my_heap_sort_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_heap_sort_test.dir\
   TARGET_FILE = test_my_heap_sort_test.exe
   TARGET_IMPLIB = libtest_my_heap_sort_test.dll.a
-  TARGET_PDB = test_my_heap_sort_test.pdb
+  TARGET_PDB = test_my_heap_sort_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_list_test
@@ -358,8 +294,6 @@ build CMakeFiles/test_my_list_test.dir/test/my_list_test.cpp.obj: CXX_COMPILER__
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_list_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_list_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_list_test.dir\
-  TARGET_PDB = test_my_list_test.pdb
   dyndep = CMakeFiles/test_my_list_test.dir/CXX.dd
 
 build CMakeFiles/test_my_list_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_list_test.dir/CXXModules.json CMakeFiles/test_my_list_test.dir/test/my_list_test.cpp.obj.modmap: CXX_DYNDEP__test_my_list_test_Debug CMakeFiles/test_my_list_test.dir/test/my_list_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_list_test.dir/CXXDependInfo.json
@@ -378,10 +312,9 @@ build test_my_list_test.exe: CXX_EXECUTABLE_LINKER__test_my_list_test_Debug CMak
   OBJECT_DIR = CMakeFiles\test_my_list_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_list_test.dir\
   TARGET_FILE = test_my_list_test.exe
   TARGET_IMPLIB = libtest_my_list_test.dll.a
-  TARGET_PDB = test_my_list_test.pdb
+  TARGET_PDB = test_my_list_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_map_test
@@ -407,8 +340,6 @@ build CMakeFiles/test_my_map_test.dir/test/my_map_test.cpp.obj: CXX_COMPILER__te
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_map_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_map_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_map_test.dir\
-  TARGET_PDB = test_my_map_test.pdb
   dyndep = CMakeFiles/test_my_map_test.dir/CXX.dd
 
 build CMakeFiles/test_my_map_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_map_test.dir/CXXModules.json CMakeFiles/test_my_map_test.dir/test/my_map_test.cpp.obj.modmap: CXX_DYNDEP__test_my_map_test_Debug CMakeFiles/test_my_map_test.dir/test/my_map_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_map_test.dir/CXXDependInfo.json
@@ -427,10 +358,9 @@ build test_my_map_test.exe: CXX_EXECUTABLE_LINKER__test_my_map_test_Debug CMakeF
   OBJECT_DIR = CMakeFiles\test_my_map_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_map_test.dir\
   TARGET_FILE = test_my_map_test.exe
   TARGET_IMPLIB = libtest_my_map_test.dll.a
-  TARGET_PDB = test_my_map_test.pdb
+  TARGET_PDB = test_my_map_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_multiset_test
@@ -456,8 +386,6 @@ build CMakeFiles/test_my_multiset_test.dir/test/my_multiset_test.cpp.obj: CXX_CO
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_multiset_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_multiset_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_multiset_test.dir\
-  TARGET_PDB = test_my_multiset_test.pdb
   dyndep = CMakeFiles/test_my_multiset_test.dir/CXX.dd
 
 build CMakeFiles/test_my_multiset_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_multiset_test.dir/CXXModules.json CMakeFiles/test_my_multiset_test.dir/test/my_multiset_test.cpp.obj.modmap: CXX_DYNDEP__test_my_multiset_test_Debug CMakeFiles/test_my_multiset_test.dir/test/my_multiset_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_multiset_test.dir/CXXDependInfo.json
@@ -476,10 +404,55 @@ build test_my_multiset_test.exe: CXX_EXECUTABLE_LINKER__test_my_multiset_test_De
   OBJECT_DIR = CMakeFiles\test_my_multiset_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_multiset_test.dir\
   TARGET_FILE = test_my_multiset_test.exe
   TARGET_IMPLIB = libtest_my_multiset_test.dll.a
-  TARGET_PDB = test_my_multiset_test.pdb
+  TARGET_PDB = test_my_multiset_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_my_mutex_test
+
+
+#############################################
+# Order-only phony target for test_my_mutex_test
+
+build cmake_object_order_depends_target_test_my_mutex_test: phony || .
+
+build CMakeFiles/test_my_mutex_test.dir/test/my_mutex_test.cpp.obj.ddi: CXX_SCAN__test_my_mutex_test_Debug D$:/c++_projects/mySTL/test/my_mutex_test.cpp || cmake_object_order_depends_target_test_my_mutex_test
+  DEP_FILE = CMakeFiles\test_my_mutex_test.dir\test\my_mutex_test.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\test_my_mutex_test.dir\test\my_mutex_test.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/c++_projects/mySTL
+  OBJ_FILE = CMakeFiles\test_my_mutex_test.dir\test\my_mutex_test.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\test_my_mutex_test.dir\test\my_mutex_test.cpp.obj.ddi.i
+
+build CMakeFiles/test_my_mutex_test.dir/test/my_mutex_test.cpp.obj: CXX_COMPILER__test_my_mutex_test_scanned_Debug D$:/c++_projects/mySTL/test/my_mutex_test.cpp | CMakeFiles/test_my_mutex_test.dir/test/my_mutex_test.cpp.obj.modmap || cmake_object_order_depends_target_test_my_mutex_test CMakeFiles/test_my_mutex_test.dir/CXX.dd
+  DEP_FILE = CMakeFiles\test_my_mutex_test.dir\test\my_mutex_test.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\test_my_mutex_test.dir\test\my_mutex_test.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/c++_projects/mySTL
+  OBJECT_DIR = CMakeFiles\test_my_mutex_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_my_mutex_test.dir\test
+  dyndep = CMakeFiles/test_my_mutex_test.dir/CXX.dd
+
+build CMakeFiles/test_my_mutex_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_mutex_test.dir/CXXModules.json CMakeFiles/test_my_mutex_test.dir/test/my_mutex_test.cpp.obj.modmap: CXX_DYNDEP__test_my_mutex_test_Debug CMakeFiles/test_my_mutex_test.dir/test/my_mutex_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_mutex_test.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_my_mutex_test
+
+
+#############################################
+# Link the executable test_my_mutex_test.exe
+
+build test_my_mutex_test.exe: CXX_EXECUTABLE_LINKER__test_my_mutex_test_Debug CMakeFiles/test_my_mutex_test.dir/test/my_mutex_test.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_my_mutex_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_my_mutex_test.exe
+  TARGET_IMPLIB = libtest_my_mutex_test.dll.a
+  TARGET_PDB = test_my_mutex_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_optional_test
@@ -505,8 +478,6 @@ build CMakeFiles/test_my_optional_test.dir/test/my_optional_test.cpp.obj: CXX_CO
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_optional_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_optional_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_optional_test.dir\
-  TARGET_PDB = test_my_optional_test.pdb
   dyndep = CMakeFiles/test_my_optional_test.dir/CXX.dd
 
 build CMakeFiles/test_my_optional_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_optional_test.dir/CXXModules.json CMakeFiles/test_my_optional_test.dir/test/my_optional_test.cpp.obj.modmap: CXX_DYNDEP__test_my_optional_test_Debug CMakeFiles/test_my_optional_test.dir/test/my_optional_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_optional_test.dir/CXXDependInfo.json
@@ -525,10 +496,55 @@ build test_my_optional_test.exe: CXX_EXECUTABLE_LINKER__test_my_optional_test_De
   OBJECT_DIR = CMakeFiles\test_my_optional_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_optional_test.dir\
   TARGET_FILE = test_my_optional_test.exe
   TARGET_IMPLIB = libtest_my_optional_test.dll.a
-  TARGET_PDB = test_my_optional_test.pdb
+  TARGET_PDB = test_my_optional_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_my_pair_test
+
+
+#############################################
+# Order-only phony target for test_my_pair_test
+
+build cmake_object_order_depends_target_test_my_pair_test: phony || .
+
+build CMakeFiles/test_my_pair_test.dir/test/my_pair_test.cpp.obj.ddi: CXX_SCAN__test_my_pair_test_Debug D$:/c++_projects/mySTL/test/my_pair_test.cpp || cmake_object_order_depends_target_test_my_pair_test
+  DEP_FILE = CMakeFiles\test_my_pair_test.dir\test\my_pair_test.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\test_my_pair_test.dir\test\my_pair_test.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/c++_projects/mySTL
+  OBJ_FILE = CMakeFiles\test_my_pair_test.dir\test\my_pair_test.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\test_my_pair_test.dir\test\my_pair_test.cpp.obj.ddi.i
+
+build CMakeFiles/test_my_pair_test.dir/test/my_pair_test.cpp.obj: CXX_COMPILER__test_my_pair_test_scanned_Debug D$:/c++_projects/mySTL/test/my_pair_test.cpp | CMakeFiles/test_my_pair_test.dir/test/my_pair_test.cpp.obj.modmap || cmake_object_order_depends_target_test_my_pair_test CMakeFiles/test_my_pair_test.dir/CXX.dd
+  DEP_FILE = CMakeFiles\test_my_pair_test.dir\test\my_pair_test.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\test_my_pair_test.dir\test\my_pair_test.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/c++_projects/mySTL
+  OBJECT_DIR = CMakeFiles\test_my_pair_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_my_pair_test.dir\test
+  dyndep = CMakeFiles/test_my_pair_test.dir/CXX.dd
+
+build CMakeFiles/test_my_pair_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_pair_test.dir/CXXModules.json CMakeFiles/test_my_pair_test.dir/test/my_pair_test.cpp.obj.modmap: CXX_DYNDEP__test_my_pair_test_Debug CMakeFiles/test_my_pair_test.dir/test/my_pair_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_pair_test.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_my_pair_test
+
+
+#############################################
+# Link the executable test_my_pair_test.exe
+
+build test_my_pair_test.exe: CXX_EXECUTABLE_LINKER__test_my_pair_test_Debug CMakeFiles/test_my_pair_test.dir/test/my_pair_test.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_my_pair_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_my_pair_test.exe
+  TARGET_IMPLIB = libtest_my_pair_test.dll.a
+  TARGET_PDB = test_my_pair_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_priority_queue_test
@@ -554,8 +570,6 @@ build CMakeFiles/test_my_priority_queue_test.dir/test/my_priority_queue_test.cpp
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_priority_queue_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_priority_queue_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_priority_queue_test.dir\
-  TARGET_PDB = test_my_priority_queue_test.pdb
   dyndep = CMakeFiles/test_my_priority_queue_test.dir/CXX.dd
 
 build CMakeFiles/test_my_priority_queue_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_priority_queue_test.dir/CXXModules.json CMakeFiles/test_my_priority_queue_test.dir/test/my_priority_queue_test.cpp.obj.modmap: CXX_DYNDEP__test_my_priority_queue_test_Debug CMakeFiles/test_my_priority_queue_test.dir/test/my_priority_queue_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_priority_queue_test.dir/CXXDependInfo.json
@@ -574,10 +588,9 @@ build test_my_priority_queue_test.exe: CXX_EXECUTABLE_LINKER__test_my_priority_q
   OBJECT_DIR = CMakeFiles\test_my_priority_queue_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_priority_queue_test.dir\
   TARGET_FILE = test_my_priority_queue_test.exe
   TARGET_IMPLIB = libtest_my_priority_queue_test.dll.a
-  TARGET_PDB = test_my_priority_queue_test.pdb
+  TARGET_PDB = test_my_priority_queue_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_queue_test
@@ -603,8 +616,6 @@ build CMakeFiles/test_my_queue_test.dir/test/my_queue_test.cpp.obj: CXX_COMPILER
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_queue_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_queue_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_queue_test.dir\
-  TARGET_PDB = test_my_queue_test.pdb
   dyndep = CMakeFiles/test_my_queue_test.dir/CXX.dd
 
 build CMakeFiles/test_my_queue_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_queue_test.dir/CXXModules.json CMakeFiles/test_my_queue_test.dir/test/my_queue_test.cpp.obj.modmap: CXX_DYNDEP__test_my_queue_test_Debug CMakeFiles/test_my_queue_test.dir/test/my_queue_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_queue_test.dir/CXXDependInfo.json
@@ -623,10 +634,9 @@ build test_my_queue_test.exe: CXX_EXECUTABLE_LINKER__test_my_queue_test_Debug CM
   OBJECT_DIR = CMakeFiles\test_my_queue_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_queue_test.dir\
   TARGET_FILE = test_my_queue_test.exe
   TARGET_IMPLIB = libtest_my_queue_test.dll.a
-  TARGET_PDB = test_my_queue_test.pdb
+  TARGET_PDB = test_my_queue_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_ratio_test
@@ -652,8 +662,6 @@ build CMakeFiles/test_my_ratio_test.dir/test/my_ratio_test.cpp.obj: CXX_COMPILER
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_ratio_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_ratio_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_ratio_test.dir\
-  TARGET_PDB = test_my_ratio_test.pdb
   dyndep = CMakeFiles/test_my_ratio_test.dir/CXX.dd
 
 build CMakeFiles/test_my_ratio_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_ratio_test.dir/CXXModules.json CMakeFiles/test_my_ratio_test.dir/test/my_ratio_test.cpp.obj.modmap: CXX_DYNDEP__test_my_ratio_test_Debug CMakeFiles/test_my_ratio_test.dir/test/my_ratio_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_ratio_test.dir/CXXDependInfo.json
@@ -672,10 +680,9 @@ build test_my_ratio_test.exe: CXX_EXECUTABLE_LINKER__test_my_ratio_test_Debug CM
   OBJECT_DIR = CMakeFiles\test_my_ratio_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_ratio_test.dir\
   TARGET_FILE = test_my_ratio_test.exe
   TARGET_IMPLIB = libtest_my_ratio_test.dll.a
-  TARGET_PDB = test_my_ratio_test.pdb
+  TARGET_PDB = test_my_ratio_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_rbtree_map_test
@@ -701,8 +708,6 @@ build CMakeFiles/test_my_rbtree_map_test.dir/test/my_rbtree_map_test.cpp.obj: CX
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_rbtree_map_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_rbtree_map_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_rbtree_map_test.dir\
-  TARGET_PDB = test_my_rbtree_map_test.pdb
   dyndep = CMakeFiles/test_my_rbtree_map_test.dir/CXX.dd
 
 build CMakeFiles/test_my_rbtree_map_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_rbtree_map_test.dir/CXXModules.json CMakeFiles/test_my_rbtree_map_test.dir/test/my_rbtree_map_test.cpp.obj.modmap: CXX_DYNDEP__test_my_rbtree_map_test_Debug CMakeFiles/test_my_rbtree_map_test.dir/test/my_rbtree_map_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_rbtree_map_test.dir/CXXDependInfo.json
@@ -721,10 +726,9 @@ build test_my_rbtree_map_test.exe: CXX_EXECUTABLE_LINKER__test_my_rbtree_map_tes
   OBJECT_DIR = CMakeFiles\test_my_rbtree_map_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_rbtree_map_test.dir\
   TARGET_FILE = test_my_rbtree_map_test.exe
   TARGET_IMPLIB = libtest_my_rbtree_map_test.dll.a
-  TARGET_PDB = test_my_rbtree_map_test.pdb
+  TARGET_PDB = test_my_rbtree_map_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_rbtree_test
@@ -750,8 +754,6 @@ build CMakeFiles/test_my_rbtree_test.dir/test/my_rbtree_test.cpp.obj: CXX_COMPIL
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_rbtree_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_rbtree_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_rbtree_test.dir\
-  TARGET_PDB = test_my_rbtree_test.pdb
   dyndep = CMakeFiles/test_my_rbtree_test.dir/CXX.dd
 
 build CMakeFiles/test_my_rbtree_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_rbtree_test.dir/CXXModules.json CMakeFiles/test_my_rbtree_test.dir/test/my_rbtree_test.cpp.obj.modmap: CXX_DYNDEP__test_my_rbtree_test_Debug CMakeFiles/test_my_rbtree_test.dir/test/my_rbtree_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_rbtree_test.dir/CXXDependInfo.json
@@ -770,10 +772,9 @@ build test_my_rbtree_test.exe: CXX_EXECUTABLE_LINKER__test_my_rbtree_test_Debug 
   OBJECT_DIR = CMakeFiles\test_my_rbtree_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_rbtree_test.dir\
   TARGET_FILE = test_my_rbtree_test.exe
   TARGET_IMPLIB = libtest_my_rbtree_test.dll.a
-  TARGET_PDB = test_my_rbtree_test.pdb
+  TARGET_PDB = test_my_rbtree_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_set_test
@@ -799,8 +800,6 @@ build CMakeFiles/test_my_set_test.dir/test/my_set_test.cpp.obj: CXX_COMPILER__te
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_set_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_set_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_set_test.dir\
-  TARGET_PDB = test_my_set_test.pdb
   dyndep = CMakeFiles/test_my_set_test.dir/CXX.dd
 
 build CMakeFiles/test_my_set_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_set_test.dir/CXXModules.json CMakeFiles/test_my_set_test.dir/test/my_set_test.cpp.obj.modmap: CXX_DYNDEP__test_my_set_test_Debug CMakeFiles/test_my_set_test.dir/test/my_set_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_set_test.dir/CXXDependInfo.json
@@ -819,10 +818,9 @@ build test_my_set_test.exe: CXX_EXECUTABLE_LINKER__test_my_set_test_Debug CMakeF
   OBJECT_DIR = CMakeFiles\test_my_set_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_set_test.dir\
   TARGET_FILE = test_my_set_test.exe
   TARGET_IMPLIB = libtest_my_set_test.dll.a
-  TARGET_PDB = test_my_set_test.pdb
+  TARGET_PDB = test_my_set_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_shared_ptr_test
@@ -848,8 +846,6 @@ build CMakeFiles/test_my_shared_ptr_test.dir/test/my_shared_ptr_test.cpp.obj: CX
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_shared_ptr_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_shared_ptr_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_shared_ptr_test.dir\
-  TARGET_PDB = test_my_shared_ptr_test.pdb
   dyndep = CMakeFiles/test_my_shared_ptr_test.dir/CXX.dd
 
 build CMakeFiles/test_my_shared_ptr_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_shared_ptr_test.dir/CXXModules.json CMakeFiles/test_my_shared_ptr_test.dir/test/my_shared_ptr_test.cpp.obj.modmap: CXX_DYNDEP__test_my_shared_ptr_test_Debug CMakeFiles/test_my_shared_ptr_test.dir/test/my_shared_ptr_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_shared_ptr_test.dir/CXXDependInfo.json
@@ -868,10 +864,9 @@ build test_my_shared_ptr_test.exe: CXX_EXECUTABLE_LINKER__test_my_shared_ptr_tes
   OBJECT_DIR = CMakeFiles\test_my_shared_ptr_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_shared_ptr_test.dir\
   TARGET_FILE = test_my_shared_ptr_test.exe
   TARGET_IMPLIB = libtest_my_shared_ptr_test.dll.a
-  TARGET_PDB = test_my_shared_ptr_test.pdb
+  TARGET_PDB = test_my_shared_ptr_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_stack_test
@@ -897,8 +892,6 @@ build CMakeFiles/test_my_stack_test.dir/test/my_stack_test.cpp.obj: CXX_COMPILER
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_stack_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_stack_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_stack_test.dir\
-  TARGET_PDB = test_my_stack_test.pdb
   dyndep = CMakeFiles/test_my_stack_test.dir/CXX.dd
 
 build CMakeFiles/test_my_stack_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_stack_test.dir/CXXModules.json CMakeFiles/test_my_stack_test.dir/test/my_stack_test.cpp.obj.modmap: CXX_DYNDEP__test_my_stack_test_Debug CMakeFiles/test_my_stack_test.dir/test/my_stack_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_stack_test.dir/CXXDependInfo.json
@@ -917,10 +910,9 @@ build test_my_stack_test.exe: CXX_EXECUTABLE_LINKER__test_my_stack_test_Debug CM
   OBJECT_DIR = CMakeFiles\test_my_stack_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_stack_test.dir\
   TARGET_FILE = test_my_stack_test.exe
   TARGET_IMPLIB = libtest_my_stack_test.dll.a
-  TARGET_PDB = test_my_stack_test.pdb
+  TARGET_PDB = test_my_stack_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_string_test
@@ -946,8 +938,6 @@ build CMakeFiles/test_my_string_test.dir/test/my_string_test.cpp.obj: CXX_COMPIL
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_string_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_string_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_string_test.dir\
-  TARGET_PDB = test_my_string_test.pdb
   dyndep = CMakeFiles/test_my_string_test.dir/CXX.dd
 
 build CMakeFiles/test_my_string_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_string_test.dir/CXXModules.json CMakeFiles/test_my_string_test.dir/test/my_string_test.cpp.obj.modmap: CXX_DYNDEP__test_my_string_test_Debug CMakeFiles/test_my_string_test.dir/test/my_string_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_string_test.dir/CXXDependInfo.json
@@ -966,10 +956,9 @@ build test_my_string_test.exe: CXX_EXECUTABLE_LINKER__test_my_string_test_Debug 
   OBJECT_DIR = CMakeFiles\test_my_string_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_string_test.dir\
   TARGET_FILE = test_my_string_test.exe
   TARGET_IMPLIB = libtest_my_string_test.dll.a
-  TARGET_PDB = test_my_string_test.pdb
+  TARGET_PDB = test_my_string_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_tuple_test
@@ -995,8 +984,6 @@ build CMakeFiles/test_my_tuple_test.dir/test/my_tuple_test.cpp.obj: CXX_COMPILER
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_tuple_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_tuple_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_tuple_test.dir\
-  TARGET_PDB = test_my_tuple_test.pdb
   dyndep = CMakeFiles/test_my_tuple_test.dir/CXX.dd
 
 build CMakeFiles/test_my_tuple_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_tuple_test.dir/CXXModules.json CMakeFiles/test_my_tuple_test.dir/test/my_tuple_test.cpp.obj.modmap: CXX_DYNDEP__test_my_tuple_test_Debug CMakeFiles/test_my_tuple_test.dir/test/my_tuple_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_tuple_test.dir/CXXDependInfo.json
@@ -1015,10 +1002,9 @@ build test_my_tuple_test.exe: CXX_EXECUTABLE_LINKER__test_my_tuple_test_Debug CM
   OBJECT_DIR = CMakeFiles\test_my_tuple_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_tuple_test.dir\
   TARGET_FILE = test_my_tuple_test.exe
   TARGET_IMPLIB = libtest_my_tuple_test.dll.a
-  TARGET_PDB = test_my_tuple_test.pdb
+  TARGET_PDB = test_my_tuple_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_unique_ptr_test
@@ -1044,8 +1030,6 @@ build CMakeFiles/test_my_unique_ptr_test.dir/test/my_unique_ptr_test.cpp.obj: CX
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_unique_ptr_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_unique_ptr_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unique_ptr_test.dir\
-  TARGET_PDB = test_my_unique_ptr_test.pdb
   dyndep = CMakeFiles/test_my_unique_ptr_test.dir/CXX.dd
 
 build CMakeFiles/test_my_unique_ptr_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unique_ptr_test.dir/CXXModules.json CMakeFiles/test_my_unique_ptr_test.dir/test/my_unique_ptr_test.cpp.obj.modmap: CXX_DYNDEP__test_my_unique_ptr_test_Debug CMakeFiles/test_my_unique_ptr_test.dir/test/my_unique_ptr_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unique_ptr_test.dir/CXXDependInfo.json
@@ -1064,10 +1048,9 @@ build test_my_unique_ptr_test.exe: CXX_EXECUTABLE_LINKER__test_my_unique_ptr_tes
   OBJECT_DIR = CMakeFiles\test_my_unique_ptr_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unique_ptr_test.dir\
   TARGET_FILE = test_my_unique_ptr_test.exe
   TARGET_IMPLIB = libtest_my_unique_ptr_test.dll.a
-  TARGET_PDB = test_my_unique_ptr_test.pdb
+  TARGET_PDB = test_my_unique_ptr_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_unordered_map_test
@@ -1093,8 +1076,6 @@ build CMakeFiles/test_my_unordered_map_test.dir/test/my_unordered_map_test.cpp.o
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_unordered_map_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_unordered_map_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_map_test.dir\
-  TARGET_PDB = test_my_unordered_map_test.pdb
   dyndep = CMakeFiles/test_my_unordered_map_test.dir/CXX.dd
 
 build CMakeFiles/test_my_unordered_map_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_map_test.dir/CXXModules.json CMakeFiles/test_my_unordered_map_test.dir/test/my_unordered_map_test.cpp.obj.modmap: CXX_DYNDEP__test_my_unordered_map_test_Debug CMakeFiles/test_my_unordered_map_test.dir/test/my_unordered_map_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_map_test.dir/CXXDependInfo.json
@@ -1113,10 +1094,9 @@ build test_my_unordered_map_test.exe: CXX_EXECUTABLE_LINKER__test_my_unordered_m
   OBJECT_DIR = CMakeFiles\test_my_unordered_map_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_map_test.dir\
   TARGET_FILE = test_my_unordered_map_test.exe
   TARGET_IMPLIB = libtest_my_unordered_map_test.dll.a
-  TARGET_PDB = test_my_unordered_map_test.pdb
+  TARGET_PDB = test_my_unordered_map_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_unordered_multimap_test
@@ -1142,8 +1122,6 @@ build CMakeFiles/test_my_unordered_multimap_test.dir/test/my_unordered_multimap_
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_unordered_multimap_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_unordered_multimap_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_multimap_test.dir\
-  TARGET_PDB = test_my_unordered_multimap_test.pdb
   dyndep = CMakeFiles/test_my_unordered_multimap_test.dir/CXX.dd
 
 build CMakeFiles/test_my_unordered_multimap_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_multimap_test.dir/CXXModules.json CMakeFiles/test_my_unordered_multimap_test.dir/test/my_unordered_multimap_test.cpp.obj.modmap: CXX_DYNDEP__test_my_unordered_multimap_test_Debug CMakeFiles/test_my_unordered_multimap_test.dir/test/my_unordered_multimap_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_multimap_test.dir/CXXDependInfo.json
@@ -1162,10 +1140,9 @@ build test_my_unordered_multimap_test.exe: CXX_EXECUTABLE_LINKER__test_my_unorde
   OBJECT_DIR = CMakeFiles\test_my_unordered_multimap_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_multimap_test.dir\
   TARGET_FILE = test_my_unordered_multimap_test.exe
   TARGET_IMPLIB = libtest_my_unordered_multimap_test.dll.a
-  TARGET_PDB = test_my_unordered_multimap_test.pdb
+  TARGET_PDB = test_my_unordered_multimap_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_unordered_multiset_test
@@ -1191,8 +1168,6 @@ build CMakeFiles/test_my_unordered_multiset_test.dir/test/my_unordered_multiset_
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_unordered_multiset_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_unordered_multiset_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_multiset_test.dir\
-  TARGET_PDB = test_my_unordered_multiset_test.pdb
   dyndep = CMakeFiles/test_my_unordered_multiset_test.dir/CXX.dd
 
 build CMakeFiles/test_my_unordered_multiset_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_multiset_test.dir/CXXModules.json CMakeFiles/test_my_unordered_multiset_test.dir/test/my_unordered_multiset_test.cpp.obj.modmap: CXX_DYNDEP__test_my_unordered_multiset_test_Debug CMakeFiles/test_my_unordered_multiset_test.dir/test/my_unordered_multiset_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_multiset_test.dir/CXXDependInfo.json
@@ -1211,10 +1186,9 @@ build test_my_unordered_multiset_test.exe: CXX_EXECUTABLE_LINKER__test_my_unorde
   OBJECT_DIR = CMakeFiles\test_my_unordered_multiset_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_multiset_test.dir\
   TARGET_FILE = test_my_unordered_multiset_test.exe
   TARGET_IMPLIB = libtest_my_unordered_multiset_test.dll.a
-  TARGET_PDB = test_my_unordered_multiset_test.pdb
+  TARGET_PDB = test_my_unordered_multiset_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_unordered_set_test
@@ -1240,8 +1214,6 @@ build CMakeFiles/test_my_unordered_set_test.dir/test/my_unordered_set_test.cpp.o
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_unordered_set_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_unordered_set_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_set_test.dir\
-  TARGET_PDB = test_my_unordered_set_test.pdb
   dyndep = CMakeFiles/test_my_unordered_set_test.dir/CXX.dd
 
 build CMakeFiles/test_my_unordered_set_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_set_test.dir/CXXModules.json CMakeFiles/test_my_unordered_set_test.dir/test/my_unordered_set_test.cpp.obj.modmap: CXX_DYNDEP__test_my_unordered_set_test_Debug CMakeFiles/test_my_unordered_set_test.dir/test/my_unordered_set_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_unordered_set_test.dir/CXXDependInfo.json
@@ -1260,10 +1232,9 @@ build test_my_unordered_set_test.exe: CXX_EXECUTABLE_LINKER__test_my_unordered_s
   OBJECT_DIR = CMakeFiles\test_my_unordered_set_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_unordered_set_test.dir\
   TARGET_FILE = test_my_unordered_set_test.exe
   TARGET_IMPLIB = libtest_my_unordered_set_test.dll.a
-  TARGET_PDB = test_my_unordered_set_test.pdb
+  TARGET_PDB = test_my_unordered_set_test.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_my_vector_test
@@ -1289,8 +1260,6 @@ build CMakeFiles/test_my_vector_test.dir/test/my_vector_test.cpp.obj: CXX_COMPIL
   INCLUDES = -ID:/c++_projects/mySTL
   OBJECT_DIR = CMakeFiles\test_my_vector_test.dir
   OBJECT_FILE_DIR = CMakeFiles\test_my_vector_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_vector_test.dir\
-  TARGET_PDB = test_my_vector_test.pdb
   dyndep = CMakeFiles/test_my_vector_test.dir/CXX.dd
 
 build CMakeFiles/test_my_vector_test.dir/CXX.dd | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_vector_test.dir/CXXModules.json CMakeFiles/test_my_vector_test.dir/test/my_vector_test.cpp.obj.modmap: CXX_DYNDEP__test_my_vector_test_Debug CMakeFiles/test_my_vector_test.dir/test/my_vector_test.cpp.obj.ddi | D$:/c++_projects/mySTL/cmake-build-debug/CMakeFiles/test_my_vector_test.dir/CXXDependInfo.json
@@ -1309,10 +1278,9 @@ build test_my_vector_test.exe: CXX_EXECUTABLE_LINKER__test_my_vector_test_Debug 
   OBJECT_DIR = CMakeFiles\test_my_vector_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_my_vector_test.dir\
   TARGET_FILE = test_my_vector_test.exe
   TARGET_IMPLIB = libtest_my_vector_test.dll.a
-  TARGET_PDB = test_my_vector_test.pdb
+  TARGET_PDB = test_my_vector_test.exe.dbg
 
 
 #############################################
@@ -1352,8 +1320,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build test_mt_pair_test: phony test_mt_pair_test.exe
-
 build test_my_array_test: phony test_my_array_test.exe
 
 build test_my_deque_test: phony test_my_deque_test.exe
@@ -1370,7 +1336,11 @@ build test_my_map_test: phony test_my_map_test.exe
 
 build test_my_multiset_test: phony test_my_multiset_test.exe
 
+build test_my_mutex_test: phony test_my_mutex_test.exe
+
 build test_my_optional_test: phony test_my_optional_test.exe
+
+build test_my_pair_test: phony test_my_pair_test.exe
 
 build test_my_priority_queue_test: phony test_my_priority_queue_test.exe
 
@@ -1412,7 +1382,7 @@ build test_my_vector_test: phony test_my_vector_test.exe
 #############################################
 # Folder: D:/c++_projects/mySTL/cmake-build-debug
 
-build all: phony test_mt_pair_test.exe test_my_array_test.exe test_my_deque_test.exe test_my_duration_test.exe test_my_hashtable_test.exe test_my_heap_sort_test.exe test_my_list_test.exe test_my_map_test.exe test_my_multiset_test.exe test_my_optional_test.exe test_my_priority_queue_test.exe test_my_queue_test.exe test_my_ratio_test.exe test_my_rbtree_map_test.exe test_my_rbtree_test.exe test_my_set_test.exe test_my_shared_ptr_test.exe test_my_stack_test.exe test_my_string_test.exe test_my_tuple_test.exe test_my_unique_ptr_test.exe test_my_unordered_map_test.exe test_my_unordered_multimap_test.exe test_my_unordered_multiset_test.exe test_my_unordered_set_test.exe test_my_vector_test.exe
+build all: phony test_my_array_test.exe test_my_deque_test.exe test_my_duration_test.exe test_my_hashtable_test.exe test_my_heap_sort_test.exe test_my_list_test.exe test_my_map_test.exe test_my_multiset_test.exe test_my_mutex_test.exe test_my_optional_test.exe test_my_pair_test.exe test_my_priority_queue_test.exe test_my_queue_test.exe test_my_ratio_test.exe test_my_rbtree_map_test.exe test_my_rbtree_test.exe test_my_set_test.exe test_my_shared_ptr_test.exe test_my_stack_test.exe test_my_string_test.exe test_my_tuple_test.exe test_my_unique_ptr_test.exe test_my_unordered_map_test.exe test_my_unordered_multimap_test.exe test_my_unordered_multiset_test.exe test_my_unordered_set_test.exe test_my_vector_test.exe
 
 # =============================================================================
 # Built-in targets
@@ -1421,14 +1391,14 @@ build all: phony test_mt_pair_test.exe test_my_array_test.exe test_my_deque_test
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/c++_projects/mySTL/CMakeLists.txt D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineRCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCCompiler.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystem.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestRCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-FindBinUtils.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Determine-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/c++_projects/mySTL/CMakeLists.txt D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/c++_projects/mySTL/CMakeLists.txt D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineRCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCCompiler.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystem.cmake.in D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestRCCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-FindBinUtils.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Determine-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake: phony
+build CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/c++_projects/mySTL/CMakeLists.txt D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/software/JetBrains/CLion$ 2024.3.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################

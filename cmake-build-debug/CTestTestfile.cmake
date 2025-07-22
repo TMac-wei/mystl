@@ -4,8 +4,6 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test([=[test_mt_pair_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_mt_pair_test.exe")
-set_tests_properties([=[test_mt_pair_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
 add_test([=[test_my_array_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_array_test.exe")
 set_tests_properties([=[test_my_array_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
 add_test([=[test_my_deque_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_deque_test.exe")
@@ -22,8 +20,12 @@ add_test([=[test_my_map_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my
 set_tests_properties([=[test_my_map_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
 add_test([=[test_my_multiset_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_multiset_test.exe")
 set_tests_properties([=[test_my_multiset_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
+add_test([=[test_my_mutex_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_mutex_test.exe")
+set_tests_properties([=[test_my_mutex_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
 add_test([=[test_my_optional_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_optional_test.exe")
 set_tests_properties([=[test_my_optional_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
+add_test([=[test_my_pair_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_pair_test.exe")
+set_tests_properties([=[test_my_pair_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
 add_test([=[test_my_priority_queue_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_priority_queue_test.exe")
 set_tests_properties([=[test_my_priority_queue_test]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/c++_projects/mySTL/CMakeLists.txt;34;add_test;D:/c++_projects/mySTL/CMakeLists.txt;0;")
 add_test([=[test_my_queue_test]=] "D:/c++_projects/mySTL/cmake-build-debug/test_my_queue_test.exe")

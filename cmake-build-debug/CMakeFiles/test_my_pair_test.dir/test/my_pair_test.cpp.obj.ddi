@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles\\test_my_pair_test.dir\\test\\my_pair_test.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
