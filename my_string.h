@@ -72,7 +72,7 @@ namespace my {
         basic_string(basic_string &&str, size_type pos)
                 : basic_string(my::move(str), pos, npos) {}
 
-        /// 利用边长的value_type数组进行初始化
+        /// 利用变长的value_type数组进行初始化
         basic_string(const value_type *s) {
             size_type size = strlen(s);
             init_(s, size);

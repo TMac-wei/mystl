@@ -89,7 +89,6 @@ namespace my {
         /// 引用控制块的成员变量主要是引用计数use_count与弱引用计数weak_count
         std::atomic<int32_t> use_count_;        /// 引用计数
         std::atomic<int32_t> weak_count_;        /// 弱引用计数
-
     };
 
 

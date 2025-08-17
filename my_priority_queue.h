@@ -32,9 +32,9 @@ namespace my {
 
         priority_queue &operator=(priority_queue &&) = default;
 
-        priority_queue(const priority_queue &) = default;
+        priority_queue(priority_queue &) noexcept = default;
 
-        priority_queue &operator=(const priority_queue &) = default;
+        priority_queue &operator=(priority_queue &) noexcept = default;
 
 
         /// 输入迭代器版本的构造函数

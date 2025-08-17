@@ -13,7 +13,7 @@
 template<typename T>
 class MyAlloc {
 public:
-    // 定义各个数据类型
+    /// 定义各个数据类型
     using value_type = T;
     using pointer = T *;
     using const_pointer = const T *;
@@ -22,7 +22,7 @@ public:
     using size_type = size_t;
     using difference_type = ptrdiff_t;
 
-    // 构造函数
+    /// 构造函数
     MyAlloc() noexcept = default;
 
     MyAlloc(const MyAlloc &) noexcept = default;
