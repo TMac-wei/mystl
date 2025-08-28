@@ -16,10 +16,10 @@ template<typename T, typename Distance = ptrdiff_t>
 class istream_iterator {
 public:
     using iterator_category = input_iterator_tag;
-    using value_type = void;
-    using difference_type = ptrdiff_t;
-    using pointer = void;
-    using reference = void;
+    using value_type = T;
+    using difference_type = Distance;
+    using pointer = const T*;
+    using reference = const T&;
 
     /// 默认构造函数，用于创建一个“尾后迭代器”，代表输入结束
     /// 对于 istream_iterator，流读完或出错会让 stream_ 变成 nullptr，此时就等价于尾后迭代器
@@ -61,7 +61,7 @@ public:
     }
 
     friend bool operator!=(const istream_iterator &lhs, const istream_iterator &rhs) {
-        return lhs != rhs;
+        return !(lhs == rhs);
     }
 
 private:
