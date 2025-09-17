@@ -307,7 +307,7 @@ namespace my {
         data_allocator data_allocator_;
         map_allocator map_allocator_;
 
-        /// 析构节点对象以及析构节点和分配节点的接口
+        /// 创建节点对象以及析构节点和分配节点的接口
         void create_nodes_(map_pointer nstart, map_pointer nfinish)
         {
             map_pointer cur;

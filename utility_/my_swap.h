@@ -9,7 +9,7 @@
 
 namespace my {
     template<typename T>
-    void swap(T &a, T &b) {
+    void swap(T &a, T &b) noexcept {
         T temp(a);
         a = b;
         b = temp;

@@ -15,7 +15,7 @@
 namespace my {
     /// 定义链表节点
     /// list底层是一个双向链表实现
-/// 先定义链表的节点结构体
+    /// 先定义链表的节点结构体
     template<typename T>
     struct ListNode {
         T data_;            /// 节点数据
@@ -473,11 +473,14 @@ namespace my {
             iterator first = begin();
             iterator last = end();
             while (first != last) {
+                /// 首先保存下一个节点的迭代器
                 iterator next = first;
                 ++next;
+                /// 当满足谓词p的条件之后，删除当前迭代器，但是此时迭代器会发生失效
                 if (p(*first)) {
                     erase(first);
                 }
+                /// 防止迭代器失效，重新获取迭代器
                 first = next;
             }
         }
