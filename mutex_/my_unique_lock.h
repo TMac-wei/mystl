@@ -11,10 +11,11 @@
 
 namespace my {
 
-    /// defer_lock_t，后面再加锁
+    /// defer_lock_t，后面再加锁，延迟加锁，需要手动调用lock()
     /// try_to_lock_t，尝试加锁
     /// adopt_lock_t，假设已经加锁
 
+    /// 这三个枚举仅仅作为标记使用，不存储实际数据，主要是为了通过函数重载区分不同的构造行为
     enum class adopt_lock_t {
         adopt_lock
     };
@@ -42,7 +43,7 @@ namespace my {
             mutex_->lock();
         }
 
-        /// adopt_lock策略构造函数，假设调用者已经获取到锁，只是转移锁的所有权给unique_lock
+        /// adopt_lock策略构造函数，假设调用者已经获取到锁，只是转移锁的所有权给unique_lock，即这里不需要再次调用lock()
         unique_lock(mutex_type &mutex, adopt_lock_t) noexcept
                 : mutex_(std::addressof(mutex)), owns_(true) {}
 
@@ -69,7 +70,7 @@ namespace my {
         /// 移动构造和移动赋值运算
         unique_lock(unique_lock &&other) noexcept
                 : mutex_(other.mutex_), owns_(other.owns_) {
-            /// 清理 other 的所资源
+            /// 清理 other 的所有资源，表示源对象不再关联锁
             other.mutex_ = nullptr;
             other.owns_ = false;
         }
@@ -141,12 +142,9 @@ namespace my {
             return result;
         }
 
-
     private:
         Mutex_ *mutex_;         /// 指向关联的互斥锁
         bool owns_;             /// 是否拥有锁的所有权
 
     };
-
-
 }
