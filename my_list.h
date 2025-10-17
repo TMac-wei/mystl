@@ -146,7 +146,7 @@ namespace my {
             }
         }
 
-        /// 拷贝构造，仓库里面的代码没有拷贝构造 与=重载！！！！！
+        /// 拷贝构造
         list(const list &other)
                 : list() {
             for (const auto &val: other) {

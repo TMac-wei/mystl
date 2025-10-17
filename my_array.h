@@ -31,7 +31,7 @@ namespace my {
         /// array的底层就是大小为N的固定数组
         value_type elems[N];
 
-        /// 以下是相关接口，均在编译器完成计算
+        /// 以下是相关接口，均在编译期间完成计算
         constexpr reference operator[](size_type index) {
             return elems[index];
         }
@@ -124,7 +124,7 @@ namespace my {
         /// at()
         constexpr reference at(size_type idx) {
             /// 必须进行边界检查
-            if (idx >= N) {
+            if (idx >= N || idx < 0) {
                 throw std::out_of_range("array::at");
             }
             return elems[idx];
@@ -132,7 +132,7 @@ namespace my {
 
         constexpr const_reference at(size_type idx) const {
             /// 必须进行边界检查
-            if (idx >= N) {
+            if (idx >= N || idx < 0) {
                 throw std::out_of_range("array::at");
             }
             return elems[idx];
@@ -150,7 +150,6 @@ namespace my {
             for (size_type i = 0; i < N; i++) {
                 my::swap(elems[i], other.elems[i]);
             }
-
         }
 
         /// 重载==  !=
@@ -166,7 +165,5 @@ namespace my {
         bool operator!=(const array &other) const {
             return !(*this == other);
         }
-
-
     };
 }

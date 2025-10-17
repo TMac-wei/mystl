@@ -194,7 +194,7 @@ namespace my {
             set_size_(0);
         }
 
-        /// 赋值操作
+        /// 赋值操作，深拷贝赋值，先释放当前长模式的堆内存，再调用init_复制源数据，避免内存泄漏
         basic_string& operator=(const basic_string& str) {
             if (this != &str) {
                 if (is_long_()) {
